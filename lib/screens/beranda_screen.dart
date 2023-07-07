@@ -14,7 +14,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 class BerandaScreen extends StatefulWidget {
   final String id;
-  BerandaScreen({required this.id});
+  const BerandaScreen({super.key, required this.id});
 
   @override
   State<BerandaScreen> createState() => _BerandaScreenState();

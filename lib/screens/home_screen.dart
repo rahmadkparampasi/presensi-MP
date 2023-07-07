@@ -1,23 +1,21 @@
-import 'package:presensi/screens/detailp_screen.dart';
-import 'package:presensi/screens/masuk_screen.dart';
-import 'package:presensi/services/file_services.dart';
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:double_back_to_close_app/double_back_to_close_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:presensi/constants/color_constant.dart';
 import 'package:presensi/screens/absen_screen.dart';
 import 'package:presensi/screens/bantu_screen.dart';
 import 'package:presensi/screens/beranda_screen.dart';
+import 'package:presensi/screens/detailp_screen.dart';
+import 'package:presensi/screens/masuk_screen.dart';
 import 'package:presensi/screens/set_screen.dart';
-import 'package:presensi/screens/ubah_screen.dart';
+import 'package:presensi/services/file_services.dart';
 
 class HomeScreen extends StatefulWidget {
   final int changeOptions;
   final String id;
-  HomeScreen({this.changeOptions = 0, required this.id});
+  const HomeScreen({super.key, this.changeOptions = 0, required this.id});
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }

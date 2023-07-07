@@ -1,5 +1,6 @@
-import 'package:path_provider/path_provider.dart';
 import 'dart:io';
+
+import 'package:path_provider/path_provider.dart';
 
 class FileUtils {
   static Future<String> get getFilePath async {

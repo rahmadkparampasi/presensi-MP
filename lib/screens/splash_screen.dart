@@ -1,23 +1,21 @@
 import 'dart:async';
 
-import 'package:presensi/constants/color_constant.dart';
-import 'package:presensi/services/file_services.dart';
 import 'package:flutter/material.dart';
+import 'package:presensi/constants/color_constant.dart';
 import 'package:presensi/screens/home_screen.dart';
 import 'package:presensi/screens/masuk_screen.dart';
+import 'package:presensi/services/file_services.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
   @override
-  _SplashScreenState createState() => _SplashScreenState();
+  State<SplashScreen> createState() => _SplashScreenState();
 }
 
 class _SplashScreenState extends State<SplashScreen> {
   double _width = 200;
   double _height = 200;
-
-  String _id = '';
 
   // @override
   void updateState() {

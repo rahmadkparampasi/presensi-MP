@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:awesome_dialog/awesome_dialog.dart';
-import 'package:presensi/constants/var_constant.dart';
 import 'package:http/http.dart' as http;
+import 'package:presensi/constants/var_constant.dart';
 import 'package:presensi/models/absen_model.dart';
 import 'package:presensi/models/api_response.dart';
 
@@ -436,7 +436,6 @@ class AbsenService {
 
   Future<APIResponseBrt<Adm>> getAdm(String id, String s) {
     Uri newApiUrl = Uri.parse('$s/admin/profilm/detail/$id');
-    print('$s/admin/profilm/detail/$id');
     return http.get(newApiUrl).then((data) {
       if (data.statusCode == 200) {
         final jsonData = json.decode(data.body)['response'];

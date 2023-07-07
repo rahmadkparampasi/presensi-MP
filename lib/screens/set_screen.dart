@@ -1,20 +1,18 @@
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:get_it/get_it.dart';
 import 'package:presensi/constants/color_constant.dart';
-
 import 'package:presensi/constants/style_contant.dart';
 import 'package:presensi/models/absen_model.dart';
 import 'package:presensi/screens/home_screen.dart';
 import 'package:presensi/services/absen_services.dart';
 import 'package:presensi/services/file_services.dart';
 
-import 'package:geolocator/geolocator.dart';
-
 class SetScreen extends StatefulWidget {
   final String id;
 
-  const SetScreen({required this.id});
+  const SetScreen({super.key, required this.id});
 
   @override
   State<SetScreen> createState() => _SetScreenState();
